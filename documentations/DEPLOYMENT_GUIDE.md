@@ -15,7 +15,9 @@ This guide will help you deploy your Personal Budget Tracker application to prod
 
 **Backend + Frontend on Railway:**
 
-1. **Go to [Railway.app](https://railway.app)** and sign up with GitHub
+1. **Go to [Railway.app](
+    
+)** and sign up with GitHub
 2. **Create New Project** → "Deploy from GitHub repo"
 3. **Select your repository**
 4. **Railway will auto-detect both services:**
