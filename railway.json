@@ -4,9 +4,9 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd dash-money-d3 && npm run preview",
-    "buildCommand": "cd dash-money-d3 && npm install && npm run build",
-    "healthcheckPath": "/",
+    "startCommand": "python manage.py migrate && gunicorn budget_tracker.wsgi:application --bind 0.0.0.0:$PORT",
+    "buildCommand": "pip install -r requirements.txt",
+    "healthcheckPath": "/api/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
